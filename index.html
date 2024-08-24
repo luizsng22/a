@@ -1,82 +1,72 @@
+<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <link rel="stylesheet" href="style.css"
-     />
-    <title>MINHA VIDA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('Background.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+        }
+
+        .photo {
+            width: 100%;
+            height: auto;
+            max-width: 500px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .photo:hover {
+            transform: scale(1.05);
+        }
+
+        .next-button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 18px;
+            color: #fff;
+            background: linear-gradient(45deg, #ff0066, #ff66cc);
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            box-shadow: 0px 5px 15px rgba(255, 0, 102, 0.4);
+        }
+
+        .next-button:hover {
+            background: linear-gradient(45deg, #ff66cc, #ff0066);
+            transform: scale(1.05);
+            box-shadow: 0px 10px 20px rgba(255, 0, 102, 0.6);
+        }
+    </style>
 </head>
-
-
 <body>
-    <header>TETHEEUSSS</header>
-
-    <section>
-        <div class="chamada-texto">
-    <H1>AMOR DA MINHA VIDA</H1>
-    Sou completamente apaixonado por você.
-    Mas não é por sua aparência (que é a mais pura beleza), nem pelo seu corpo (que é perfeito), nem por qualquer outra coisa.
-    Apaixonei-me por você pela pessoa que você é. Não precisei tocá-lo nem conhecê-lo pessoalmente. Sempre soube que seria você. Meu coraçãozinho te escolheu. Sua risada, seu sorriso na cor do time do coração (Palmeiras), tudo em você. Eu só quero você.
-    Lembre-se disso.
+    <div class="container">
+        <img src="saturno.jpeg" alt="Foto" class="photo">
+        <a href="next.html" class="next-button">Next</a>
     </div>
-<div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/v1jfNff-nJ8?si=0BxFUote400Zn9sc"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-        </div>
-</section>
-
-<h2>
-    Sei que sou um ser humano complicado de lidar, mas tenha paciência comigo, KKK.
-
-    Quando estiver bravo ou cansado de mim, veja essas musiquinhas aqui embaixo, lembre o quanto o sr significa pra mim</h2>
-
-    <div>
-        <a href="https://www.youtube.com/watch?v=V2G8ESoDXm8">
-           <img src="https://img.youtube.com/vi/V2G8ESoDXm8/maxresdefault.jpg"
-      
-        a>
-        <a href="https://www.youtube.com/watch?v=1IUCyniCWzg">
-            <img src="https://img.youtube.com/vi/1IUCyniCWzg/maxresdefault.jpg"
-       
-         a>
-         
-         <a href="https://www.youtube.com/watch?v=u9raS7-NisU">
-            <img src="https://img.youtube.com/vi/u9raS7-NisU/maxresdefault.jpg"
-        a> <a href=""></a>
-    </div>
-  
-
-    <section>
-
-<h3>
-Fomos um quase tão lindo. tão leve, inocente e incrível era nossa conexão!
-   <div>
-    <img src="lindo.jpeg" width="250" height="400">
-</div>
-</h3>
-
-    </section>
-
-<section>
-    <h4>
-        Meu maior desejo é poder te encontrar novamente, creio eu que nossa despedida não tenha sido um ponto final e sim uma vírgula.
-        Eu não faço ideia se você vai ler isso, mas, esperarei por você...
-        <div>
-        <img src="flor.jpeg" width="250" height="400">
-        
-    </div>
-    </h4>
-</section>
-"Se você me perguntasse quantas vezes esteve em minha mente, eu diria uma. Porque desde que você chegou, nunca mais saiu dela."
-
-- Mahmoud Darwish
-
-<audio autoplay>
-    <source src="MyGirl.mp3" type="audio/mpeg">
-</audio>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
