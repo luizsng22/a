@@ -38,3 +38,11 @@ h3{
     text-transform: uppercase;
     color: #000000;
   }
+
+  button{
+    padding: 12px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    font-size: 15px;
+    
+  }
