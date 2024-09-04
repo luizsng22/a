@@ -5,14 +5,14 @@ body {
 }
 
 header {
-    border-bottom: solid 2px rgb(42, 122, 228);
+    border-bottom: solid 2px rgb(255, 255, 255);
     padding: 20px;
     font-size: 32px;
-    color: rgb(42, 122, 228);
+    color: rgb(255, 255, 255);
 }
 
 section {
-    background: rgb(109, 174, 198);
+    background: rgb(0, 0, 0);
     padding-bottom: 80px;
     padding-top: 80px;
     display: flex;
@@ -21,22 +21,26 @@ section {
 
 .chamada-texto {
     margin-right: 5%;
+    color: rgb(70, 132, 214);
 }
 
 img{
     height: 200px;
 }
 
+h2 {
+    color: rgb(70, 132, 214);
+}
 h3{
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    color: rgb(70, 132, 214);
   }
    
   h4{
     text-align: center;
     text-transform: uppercase;
-    color: #000000;
+    color: rgb(70, 132, 214);
   }
 
   button{
@@ -46,3 +50,7 @@ h3{
     font-size: 15px;
     
   }
+
+audio {
+    display: none;
+}
