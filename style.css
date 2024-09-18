@@ -1,7 +1,7 @@
 body {
     color: white;
     background: black;
-    margin: 0px;
+    margin: 5px;
 }
 
 header {
@@ -22,6 +22,7 @@ section {
 .chamada-texto {
     margin-right: 5%;
     color: rgb(70, 132, 214);
+    font-variant: small-caps;
 }
 
 img{
