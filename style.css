@@ -31,10 +31,11 @@ img{
 
 h2 {
     color: rgb(70, 132, 214);
+    text-align: center;
 }
 h3{
     text-align: center;
-    text-transform: uppercase;
+    font-size: large;
     color: rgb(70, 132, 214);
   }
    
