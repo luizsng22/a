@@ -1,75 +1,183 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="style.css"
-     />
-    <title>MINHA VIDA</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MINHA VIDA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: #00bfff; /* azul neon */
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    header {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+      color: #00bfff;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .texto-lado {
+      flex: 1 1 300px;
+      max-width: 500px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .texto-lado p {
+      margin-bottom: 15px;
+    }
+
+    iframe {
+      flex: 1 1 300px;
+      max-width: 560px;
+      height: 315px;
+      border-radius: 10px;
+    }
+
+    h1, h2, h3 {
+      color: #00bfff;
+      text-align: center;
+    }
+
+    .musicas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .musicas a img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .musicas a img:hover {
+      transform: scale(1.05);
+    }
+
+    h3 {
+      padding: 20px;
+      border-radius: 10px;
+      background-color: #111;
+      max-width: 800px;
+      margin: 30px auto;
+    }
+
+    button {
+      display: block;
+      margin: 40px auto;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #00bfff;
+      border: none;
+      border-radius: 8px;
+      color: black;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0099cc;
+    }
+
+    blockquote {
+      text-align: center;
+      font-style: italic;
+      margin-top: 30px;
+      color: #aaa;
+    }
+
+    audio {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      iframe {
+        width: 100%;
+        height: 240px;
+      }
+    }
+  </style>
 </head>
 
-
 <body>
-    <header>TETHEEUSSS</header>
+  <header>TETHEEUSSS</header>
 
-    <section>
-        <div class="chamada-texto">
-    <H1>AMOR DA MINHA VIDA</H1>
-    Sou completamente apaixonado por você.
-    Mas não é por sua aparência (que é a mais pura beleza), nem pelo seu corpo (que é perfeito), nem por qualquer outra coisa.
-    Apaixonei-me por você pela pessoa que você é. Não precisei tocá-lo nem conhecê-lo pessoalmente. Sempre soube que seria você. Meu coraçãozinho te escolheu. Sua risada, seu sorriso na cor do time do coração (Palmeiras), tudo em você. Eu só quero você.
-    Lembre-se disso.
+  <div class="main-content">
+    <div class="texto-lado">
+      <h1>AMOR DA MINHA VIDA</h1>
+      <p>Sou completamente apaixonado por você.</p>
+      <p>Mas não é por sua aparência (que é a mais pura beleza), nem pelo seu corpo (que é perfeito), nem por qualquer outra coisa.</p>
+      <p>Apaixonei-me por você pela pessoa que você é. Não precisei tocá-lo nem conhecê-lo pessoalmente. Sempre soube que seria você.</p>
+      <p>Meu coraçãozinho te escolheu. Sua risada, seu sorriso na cor do time do coração (Palmeiras), tudo em você. Eu só quero você.</p>
+      <p>Lembre-se disso.</p>
     </div>
-<div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/v1jfNff-nJ8?si=0BxFUote400Zn9sc"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    
-        </div>
-</section>
 
-<h2>
-   Musiquinhas que me lembram você</h2>
+    <iframe src="https://www.youtube.com/embed/v1jfNff-nJ8?si=0BxFUote400Zn9sc"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
 
-    <div>
-        <a href="https://www.youtube.com/watch?v=V2G8ESoDXm8">
-           <img src="https://img.youtube.com/vi/V2G8ESoDXm8/maxresdefault.jpg" 
-      
-        a>
-        <a href="https://www.youtube.com/watch?v=1IUCyniCWzg">
-            <img src="https://img.youtube.com/vi/1IUCyniCWzg/maxresdefault.jpg"
-       
-         a>
-         
-         <a href="https://www.youtube.com/watch?v=u9raS7-NisU">
-            <img src="https://img.youtube.com/vi/u9raS7-NisU/maxresdefault.jpg"
-        a> 
-        <a href="https://youtu.be/kPa7bsKwL-c?si=z0RX6oGpmjHHsn9c">
-            <img src="https://img.youtube.com/vi/kPa7bsKwL-c/maxresdefault.jpg" a></a>
- 
+  <h2>Musiquinhas que me lembram você</h2>
 
+  <div class="musicas">
+    <a href="https://www.youtube.com/watch?v=V2G8ESoDXm8" target="_blank">
+      <img src="https://img.youtube.com/vi/V2G8ESoDXm8/maxresdefault.jpg" alt="Música 1">
+    </a>
+    <a href="https://www.youtube.com/watch?v=1IUCyniCWzg" target="_blank">
+      <img src="https://img.youtube.com/vi/1IUCyniCWzg/maxresdefault.jpg" alt="Música 2">
+    </a>
+    <a href="https://www.youtube.com/watch?v=u9raS7-NisU" target="_blank">
+      <img src="https://img.youtube.com/vi/u9raS7-NisU/maxresdefault.jpg" alt="Música 3">
+    </a>
+    <a href="https://youtu.be/kPa7bsKwL-c?si=z0RX6oGpmjHHsn9c" target="_blank">
+      <img src="https://img.youtube.com/vi/kPa7bsKwL-c/maxresdefault.jpg" alt="Música 4">
+    </a>
+  </div>
 
-    </div>
-  
+  <h3>
+    Eu queria muito que você soubesse o quanto é especial pra mim. Queria te dizer que independente de qualquer coisa, você foi uma das melhores pessoas que eu tive a oportunidade de conhecer.<br><br>
+    Você é, sem dúvida, uma parte de mim. Me desculpa por todas as brigas, as discussões, mas diante tudo, saiba que eu te amo.<br><br>
+    E sempre serei grato por você existir, e cuidar de mim. Pretendo te amar para sempre, mesmo sabendo que sempre é muito tempo.
+  </h3>
 
-    <section></section>
-<h3>
-    Eu queria muito que você soubesse o quanto é especial pra mim. Queria te dizer que independente de qualquer coisa, você foi uma das melhores pessoas que eu tive a oportunidade de conhecer.
-    Você é, sem dúvida uma parte de mim. Me desculpa por todas as brigas, as discussões, mas diante tudo, saiba que eu te amo. E sempre serei grato por você existir, e cuidar de mim. Pretendo te amar para sempre, mesmo sabendo que sempre é muito tempo.
+  <audio src="tt.mp3.unknown" autoplay loop></audio>
 
-</h3>
+  <section>
+    <button onclick="window.location.href='next2.html';">
+      Próxima Página
+    </button>
+  </section>
 
-<audio src="tt.mp3.unknown" autoplay loop>
-
-</audio>
-
-<section>
-<button onclick="window.location.href='next2.html';">
-    Próxima Página
-</button> </section>
-"Se você me perguntasse quantas vezes esteve em minha mente, eu diria uma. Porque desde que você chegou, nunca mais saiu dela."
-
-- Mahmoud Darwish
-
+  <blockquote>
+    "Se você me perguntasse quantas vezes esteve em minha mente, eu diria uma. Porque desde que você chegou, nunca mais saiu dela."<br>– Mahmoud Darwish
+  </blockquote>
 </body>
-</html>
 
+</html>
