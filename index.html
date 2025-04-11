@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Meu Amor</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
             background-image: url('sccp.jpg');
             background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             font-family: 'Arial', sans-serif;
-            color: transparent
-            text-shadow 0px 0px 10px rgba(0,0,0,0.7);
+            color: transparent;
+            text-shadow: 0px 0px 10px rgba(0,0,0,0.7);
         }
 
         .container {
@@ -59,6 +61,17 @@
             background: linear-gradient(45deg, #ff66cc, #ff0066);
             transform: scale(1.05);
             box-shadow: 0px 10px 20px rgba(255, 0, 102, 0.6);
+        }
+
+        @media (max-width: 480px) {
+            .next-button {
+                font-size: 16px;
+                padding: 10px 20px;
+            }
+
+            .container {
+                padding: 20px;
+            }
         }
     </style>
 </head>
