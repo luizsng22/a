@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +9,7 @@
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: black;
-      color: #00bfff; /* azul neon */
+      color: #00bfff;
       padding: 20px;
       box-sizing: border-box;
     }
@@ -85,7 +84,7 @@
 
     button {
       display: block;
-      margin: 40px auto;
+      margin: 40px auto 20px auto;
       padding: 12px 24px;
       font-size: 16px;
       background-color: #00bfff;
@@ -103,12 +102,32 @@
     blockquote {
       text-align: center;
       font-style: italic;
-      margin-top: 30px;
+      margin-top: 20px;
       color: #aaa;
     }
 
     audio {
       display: none;
+    }
+
+    .cronometro {
+      margin-top: 40px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #00bfff;
+      text-align: center;
+    }
+
+    .musica-container {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .feito-com-amor {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #aaa;
+      text-align: center;
     }
 
     @media (max-width: 768px) {
@@ -169,15 +188,75 @@
 
   <audio src="tt.mp3.unknown" autoplay loop></audio>
 
-  <section>
-    <button onclick="window.location.href='next2.html';">
-      Próxima Página
-    </button>
-  </section>
+  <div class="cronometro" id="cronometro"></div>
+
+  <script>
+    const dataInicial = new Date("2024-06-01T00:00:00");
+
+    function atualizarCronometro() {
+      const agora = new Date();
+      let diffMs = agora - dataInicial;
+
+      let segundos = Math.floor(diffMs / 1000);
+      let minutos = Math.floor(segundos / 60);
+      let horas = Math.floor(minutos / 60);
+      let dias = Math.floor(horas / 24);
+
+      let anos = Math.floor(dias / 365.25);
+      dias = dias % Math.floor(365.25);
+
+      let meses = Math.floor(dias / 30.44);
+      dias = Math.floor(dias % 30.44);
+
+      horas = horas % 24;
+      minutos = minutos % 60;
+      segundos = segundos % 60;
+
+      document.getElementById("cronometro").innerHTML =
+        `${anos} anos, ${meses} meses, ${dias} dias, ` +
+        `${horas}h ${minutos}min ${segundos}s`;
+    }
+
+    setInterval(atualizarCronometro, 1000);
+    atualizarCronometro();
+  </script>
+
+  <div class="musica-container">
+    <a href="https://youtu.be/FEpuC98wcXE?si=QuT8jQ160sqx8N6K" target="_blank">
+      <img width="560" height="315" src="https://img.youtube.com/vi/FEpuC98wcXE/maxresdefault.jpg" alt="Sunshine - Delacruz">
+    </a>
+  </div>
+
+  <div class="feito-com-amor">
+    <p>Feito com amor</p>
+  </div>
+
+  <button onclick="window.location.href='next2.html';">Próxima Página</button>
 
   <blockquote>
     "Se você me perguntasse quantas vezes esteve em minha mente, eu diria uma. Porque desde que você chegou, nunca mais saiu dela."<br>– Mahmoud Darwish
   </blockquote>
-</body>
 
+  <script>
+    setInterval(() => {
+      const heart = document.createElement('div');
+      heart.textContent = '❤️';
+      heart.style.position = 'fixed';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = Math.random() * 20 + 10 + 'px';
+      heart.style.top = '-20px';
+      document.body.appendChild(heart);
+
+      let pos = 0;
+      const fall = setInterval(() => {
+        pos += 2;
+        heart.style.top = pos + 'px';
+        if (pos > window.innerHeight) {
+          clearInterval(fall);
+          heart.remove();
+        }
+      }, 30);
+    }, 500);
+  </script>
+</body>
 </html>
