@@ -251,7 +251,7 @@ atualizarCronometro();
   </a>
 </div>
 
-  <div class="feito-com-amor">
+  <div class="Luiz.">
     <p>Luiz.</p>
   </div>
 
@@ -261,26 +261,6 @@ atualizarCronometro();
     "Se você me perguntasse quantas vezes esteve em minha mente, eu diria uma. Porque desde que você chegou, nunca mais saiu dela."<br>– Mahmoud Darwish
   </blockquote>
 
-  <script>
-    setInterval(() => {
-      const heart = document.createElement('div');
-      heart.textContent = '';
-      heart.style.position = 'fixed';
-      heart.style.left = Math.random() * 100 + 'vw';
-      heart.style.fontSize = Math.random() * 20 + 10 + 'px';
-      heart.style.top = '-20px';
-      document.body.appendChild(heart);
 
-      let pos = 0;
-      const fall = setInterval(() => {
-        pos += 2;
-        heart.style.top = pos + 'px';
-        if (pos > window.innerHeight) {
-          clearInterval(fall);
-          heart.remove();
-        }
-      }, 30);
-    }, 500);
-  </script>
 </body>
 </html>
